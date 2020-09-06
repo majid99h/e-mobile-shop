@@ -1,10 +1,10 @@
 <ion-menu side="start" contentId="main">
   <ion-header>
-    <ion-toolbar color="dark">
+    <ion-toolbar color="secondary">
       <ion-title>Choose Category</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-content color="primary">
     <div *ngFor="let p of pages">
       <ion-menu-toggle *ngIf="p.url">
         <ion-item routerLink="p.url" routerDirection="root" routerLinkActive="active">
@@ -22,7 +22,7 @@
       </ion-item>
       <ion-list *ngIf="p.open">
         <ion-menu-toggle>
-          <ion-item class="sub-item" *ngFor="let sub of p.children" routerLink="sub.url" routerDirection="root"
+          <ion-item class="sub-item" *ngFor="let sub of p.children" [routerLink]="sub.url" routerDirection="forward"
             routerLinkActive="active">
             <ion-icon [name]="sub.icon" slot="start"></ion-icon>
             <ion-label>

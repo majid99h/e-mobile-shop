@@ -9,27 +9,48 @@ export class MenuPage implements OnInit {
   pages = [
     {
       title: "Main",
-      url: "main",
+      url: "menu/tabs/home",
       icon: "home",
     },
     {
       title: "Electronic & Tools",
-      open:false,
+      open: false,
       children: [
-        { title: "Television", url: "", icon: "" },
-        { title: "Camera", url: "", icon: "" },
-        { title: "Projector", url: "", icon: "" },
-        { title: "Acessories", url: "", icon: "" },
+        { title: "Television", url: "/menu/product/Television", icon: "tv" },
+        { title: "Camera", url: "/menu/product/Camera", icon: "camera" },
+        { title: "Projector", url: "/menu/product/Projector", icon: "videocam" },
+        {
+          title: "Acessories",
+          url: "/menu/product/Acessories",
+          icon: "battery-charging",
+        },
       ],
     },
     {
       title: "Mobile & Tablets",
-      open:false,
+      open: false,
       children: [
-        { title: "Smart Phones", url: "", icon: "" },
-        { title: "Tablets", url: "", icon: "" },
-        { title: "Samrt Wearable", url: "", icon: "" },
-        { title: "Accessories", url: "", icon: "" },
+        { title: "Smart Phones", url: "/menu/product/SmartPhones", icon: "call" },
+        { title: "Tablets", url: "/menu/product/Tablets", icon: "tablet-portrait" },
+        {
+          title: "Samrt Wearable",
+          url: "product/SamrtWearable",
+          icon: "watch",
+        },
+        { title: "Accessories", url: "/menu/product/Accessories", icon: "headset" },
+      ],
+    },
+    {
+      title: "Sports & Entertainment",
+      open: false,
+      children: [
+        {
+          title: "Camping and Hikng",
+          url: "/menu/product/Hiking",
+          icon: "walk",
+        },
+        { title: "Cycling", url: "/menu/product/Cycling", icon: "bicycle" },
+        { title: "Accessories", url: "/menu/product/Accessories", icon: "football" },
       ],
     },
   ];
