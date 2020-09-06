@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color="primary">
+  <div class="logo">
 
-<ion-content>
-  <ion-button expand="full" color="dark" routerLink="/menu/tabs/home">Login</ion-button>
+    <img src="../../../assets//icon//icon.png" width="120">
+
+
+  </div>
+  <div class="loginheading">
+    <ion-label>Log In</ion-label>
+  </div>
+  <div class="content">
+    <ion-card>
+
+
+      <ion-card-content>
+        <ion-item>
+
+          <ion-input placeholder="user name"></ion-input>
+          <ion-icon slot="start" name="person"></ion-icon>
+        </ion-item>
+        <ion-item class="mr">
+
+          <ion-input placeholder="password" type="password"></ion-input>
+          <ion-icon slot="start" name="lock-closed"></ion-icon>
+        </ion-item>
+
+        <div class="mp">
+          <ion-button shape="round" fill="outline" color="dark" routerLink="/menu/tabs/home">Sign In</ion-button>
+          <ion-button shape="round" fill="outline" color="dark" routerLink="/menu/tabs/home">Sign Up</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
 </ion-content>
