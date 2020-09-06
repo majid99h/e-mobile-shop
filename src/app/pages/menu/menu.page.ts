@@ -34,7 +34,7 @@ export class MenuPage implements OnInit {
         { title: "Tablets", url: "/menu/product/Tablets", icon: "tablet-portrait" },
         {
           title: "Samrt Wearable",
-          url: "product/SamrtWearable",
+          url: "/menu/product/product/SamrtWearable",
           icon: "watch",
         },
         { title: "Accessories", url: "/menu/product/Accessories", icon: "headset" },
